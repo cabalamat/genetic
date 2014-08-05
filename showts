@@ -1,0 +1,29 @@
+#! /usr/bin/env python
+
+# showts = show a solution to the travelling salesman problem
+
+"""***
+Usage:
+
+   showts <a-z list of locations>
+   
+***"""
+
+
+import sys
+
+import ts
+
+#---------------------------------------------------------------------
+ 
+#---------------------------------------------------------------------
+
+solutionStr = sys.argv[1]
+print "displaying for %s" % solutionStr
+
+tss = ts.TSSolution(ts.locs, solutionStr)
+ts.display(tss)
+
+
+
+#end
